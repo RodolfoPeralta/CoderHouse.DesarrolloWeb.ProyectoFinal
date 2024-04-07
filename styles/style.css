@@ -1,0 +1,104 @@
+/* --- Fuentes --- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  font-family:"Open Sans", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: medium;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+/* --------------- */
+
+/* --- Header --- */
+/* Div */
+.headerDiv {
+  text-align: center;
+}
+/* Logo */
+.headerDiv img {
+  width: 30%;
+}
+/* Nav Bar */
+.headerNav {
+  background-color: #469594;
+}
+/* -------------- */
+
+/* --- Other Styles --- */
+.homeSection1 {
+  background-image: url(../assets/img/planta.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.nosotrosSection1 {
+  background-image: url(../assets/img/planta2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.sectorsImg {
+  width: 5%;
+}
+
+.sedeImg {
+  width: 50%;
+}
+
+.backColorGray {
+  background-color: #404040;
+}
+
+ul {
+  list-style: none;
+}
+
+.contactImg {
+  width: 10%;
+}
+
+.sectionSpan {
+  font-weight: bold;
+  font-size: large;
+}
+
+.sectionSpanLight {
+  font-weight: lighter;
+  font-size: small;
+}
+
+.whiteFont {
+  color: white;
+}
+
+.grayFont {
+  color: #404040;
+}
+
+.backColorGreen {
+  background-color: #008080;
+}
+/* -------------------- */
+
+/* --- footer --- */
+.footerImg {
+  width: 1.5%;
+}
+/* -------------- */
+
+
+
+
+
+
+

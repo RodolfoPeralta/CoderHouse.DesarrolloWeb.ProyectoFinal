@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Rodolfo Peralta." />
+    <meta name="description" content="Sitio Web de la Empresa GIE GROUP." />
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- Icono en pestaña del navegador -->
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+
+    <title>GIE GROUP | Contacto</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="backColorGreen headerDiv">
+            <a href="../index.html">
+                <img src="../assets/icons/logoGieIcon.png" alt="Logo GIE GROUP.">
+            </a>
+        </div>
+        <nav class="headerNav">
+            <ul>
+                <li>
+                    <a class="grayFont" href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a class="grayFont" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a class="grayFont" href="../pages/soluciones.html">Soluciones</a>
+                </li>
+                <li>
+                    <a class="grayFont" href="../pages/novedades.html">Novedades</a>
+                </li>
+                <li>
+                    <a class="grayFont" href="#">Contacto</a>
+                </li>
+                <li>
+                    <input type="search" name="Búsqueda" id="buscar" placeholder="Buscar...">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <!-- Seccion 1 -->
+        <section>
+            <p>
+                Si queres información sobre cualquiera de nuestras soluciones o estás interesado o conocer más acerca de
+                la empresa, rellena nuestro formulario y nos pondremos en contacto con vos lo antes posible.
+            </p>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12573.850825230262!2d-57.58473983547363!3d-38.012991133743384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de8425fb91eb%3A0xfedef373a43b7ae1!2sGIE%20Group%20%7C%20Gesti%C3%B3n%20de%20Activos!5e0!3m2!1ses!2sar!4v1712266667937!5m2!1ses!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div>
+                <img class="contactImg" src="../assets/img/greatPlace.webp" alt="Imagen Logo Great Place To Work.">
+            </div>
+            <div>
+                <img class="contactImg" src="../assets/img/logoIram.jpg" alt="Imagen Logo Norma de Calidad IRAM">
+            </div>
+        </section>
+
+        <!-- Seccion 2 -->
+        <section>
+            <form action="" method="POST">
+                <label for="_nombre">Nombre y Apellido</label>
+                <input type="text" name="nombre_completo" id="_nombre" placeholder="Nombre y Apellido">
+
+                <label for="_empresa">Empresa</label>
+                <input type="text" name="empresa" id="_empresa" placeholder="Empresa">
+
+                <label for="_cargo">Cargo</label>
+                <input type="text" name="cargo" id="_cargo" placeholder="Cargo">
+
+                <label for="_email">E-mail</label>
+                <input type="email" name="email" id="_email">
+
+                <label for="_seleccion">Quiero contactarme con</label>
+                <select name="area de la empresa" id="_seleccion">
+                    <option value="admin">Administración</option>
+                    <option value="comer">Comercial</option>
+                </select>
+
+                <label for="_comentario">Deje su comentario</label>
+                <textarea name="" id="" cols="30" rows="10" disabled="disabled"></textarea>
+
+                <label for="_check">Acepto recibir correos y notificaciones.</label>
+                <input type="checkbox" name="check" id="_check">
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="backColorGreen">
+        <div>
+            <span class="whiteFont sectionSpanLight">&#169 2024 - Todos los derechos reservados.</span>
+        </div>
+        <div class="whiteFont">
+            <p><span class="sectionSpan">ARGENTINA Sede central</span></p>
+            <p>Av Juan B. Justo 4391.</p>
+            <p>Mar del Plata, Buenos Aires.</p>
+        </div>
+        <div class="whiteFont">
+            <p><span class="sectionSpan">PERÚ Sede Central</span></p>
+            <p>Av. Javier Prado 309 Este, Int 901.</p>
+            <p>San Isidro, Lima.</p>
+        </div>
+        <ul>
+            <li>
+                <a href="mailto:comercial@giegroup.net">
+                    <img class="footerImg" src="../assets/icons/envelope.svg" alt="E-mail Logo.">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/gie-s.a." target="_blank">
+                    <img class="footerImg" src="../assets/icons/linkedin.svg" alt="Linkedin Logo.">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@giegroup2471" target="_blank">
+                    <img class="footerImg" src="../assets/icons/youtube.svg" alt="Youtube Logo.">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
