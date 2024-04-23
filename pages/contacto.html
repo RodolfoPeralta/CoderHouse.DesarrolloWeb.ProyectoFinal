@@ -48,7 +48,8 @@
                 </li>
             </ul>
         </nav>
-        <!-- Nav Bar Mobile -->
+
+        <!-- Nav Bar vistas Mobile y Tablet -->
         <nav class="navbar bg-body-tertiary fixed-top nav-mobile">
             <div class="container-fluid">
                 <div>
@@ -112,8 +113,8 @@
                 </div>
                 <div class="google-iframe">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12574.198820773177!2d-57.5815641!3d-38.0109624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de8425fb91eb%3A0xfedef373a43b7ae1!2sGIE%20Group%20%7C%20Gesti%C3%B3n%20de%20Activos!5e0!3m2!1ses!2sar!4v1713646946404!5m2!1ses!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12574.198820773177!2d-57.5815641!3d-38.0109624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de8425fb91eb%3A0xfedef373a43b7ae1!2sGIE%20Group%20%7C%20Gesti%C3%B3n%20de%20Activos!5e0!3m2!1ses!2sar!4v1713826803966!5m2!1ses!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
@@ -126,42 +127,6 @@
             </div>
             <!-- Seccion 2 -->
             <div class="contactoSection2-container backColor-gray">
-                <!--<form action="" method="POST">
-                    <div class="nombre">
-                        <label class="white-font">Nombre y Apellido</label>
-                        <input type="text" name="nombre_completo" placeholder="Nombre y Apellido">
-                    </div>
-                    <div class="empresa">
-                        <label class="white-font">Empresa</label>
-                        <input type="text" name="empresa" placeholder="Empresa">
-                    </div>
-                    <div class="cargo">
-                        <label class="white-font" for="cargo">Cargo</label>
-                        <input type="text" name="cargo" id="cargo" placeholder="Cargo">
-                    </div>
-                    <div class="email">
-                        <label class="white-font" for="email">E-mail</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="seleccion">
-                        <label class="white-font" for="seleccion">Quiero contactarme con</label>
-                        <select name="area de la empresa" id="seleccion">
-                            <option value="admin">Administración</option>
-                            <option value="comer">Comercial</option>
-                        </select>
-                    </div>
-                    <div class="cometario">
-                        <label class="white-font comentario" for="comentario">Deje su comentario</label>
-                        <textarea name="" id="comentario" cols="30" rows="10" disabled="disabled"></textarea>
-                    </div>
-                    <div class="checkbox">
-                        <label class="white-font check" for="check">Acepto recibir correos y notificaciones.</label>
-                        <input type="checkbox" name="check" id="check">
-                    </div>
-                    <div class="button">
-                        <input class="button" type="submit" value="Enviar">
-                    </div>
-                </form>-->
                 <form class="white-font" action="" method="POST">
                     <div class="mb-3">
                         <label for="Nombre-Apellido" class="form-label">Nombre y Apellido</label>
@@ -191,11 +156,13 @@
                         <textarea class="form-control" id="Textarea" rows="1"></textarea>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Acepto recibir correos y
                             notificaciones.</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div>
+                        <button type="submit" class="btn btn-primary" id="send-button">Enviar</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -203,7 +170,7 @@
 
     <!-- Footer -->
     <footer class="backColor-green">
-        <div class="white-font sectionSpan-light">
+        <div class="white-font sectionSpan-light copyright">
             <p>&#169 2024 - Todos los derechos reservados.</p>
         </div>
         <div class="branches">
@@ -218,7 +185,6 @@
                 <p>San Isidro, Lima.</p>
             </div>
         </div>
-
         <ul class="icons-container">
             <li class="icons-item">
                 <a href="mailto:comercial@giegroup.net">
@@ -239,7 +205,7 @@
                 <a href="https://api.whatsapp.com/send/?phone=5492235898106&text&type=phone_number&app_absent=0"
                     target="_blank"><i class="fa-brands fa-whatsapp footer-icons"></i></a>
             </li>
-            <li>
+            <li class="footer-arrow">
                 <a href="#header"><i class="fa-solid fa-angle-up footer-icons arrow-icon"></i></a>
             </li>
         </ul>

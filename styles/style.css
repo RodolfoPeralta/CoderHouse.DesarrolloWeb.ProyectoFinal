@@ -72,7 +72,6 @@ a {
 
 /* ------------------------------------------------------- */
 
-
 /* -------------------- HEADER -------------------- */
 
 /* --- LOGO --- */
@@ -248,6 +247,7 @@ a {
 .contactoSection-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1 fr 1fr;
   margin-bottom: 30px;
 }
 
@@ -301,15 +301,6 @@ a {
   padding: 30px;
 }
 
-.nombre {
-  grid-row: 1 / 2;
-  grid-column: 1 / 3;
-}
-
-.empresa {
-  grid-row: 2 / 3;
-  grid-column: 1 / 3;
-}
 /* ------------------------------------------------------- */
 
 /* -------------------- NOSOTROS PAGE -------------------- */
@@ -628,7 +619,7 @@ a {
 
 footer {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   position: relative;
   align-items: center;
@@ -643,6 +634,7 @@ footer {
 .branches-item {
   padding: 15px 200px;
   text-align: center;
+  max-width: 100%;
 }
 
 .branches-item p {
@@ -685,9 +677,6 @@ footer {
 /* ------------------------------------------------ */
 
 
-
-
-
 /* ---------------------++ MEDIA QUERIES ++ -------------------- */
 
 /*  MOBILE : Entre 320px y 768px
@@ -697,7 +686,7 @@ footer {
 
 /* -------------------- MOBILE -------------------- */
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 /* -------------------- HEADER -------------------- */
 
@@ -724,12 +713,14 @@ footer {
 /* -------------------- HOME PAGE -------------------- */
 
 .homeSection1-container {
-  background-image: url(../assets/img/planta-mobile.jpg);
+  background-image: none;
+  background-color: #302680;
   background-size: 100% 100%;
   display: grid;
   grid-template-areas: "title-h1" "title-h2" "description";
   row-gap: 2vh;
   justify-content: center;
+  padding: 120px;
 }
 
 .homeSection1-container::before {
@@ -797,6 +788,7 @@ footer {
   grid-template-areas: "nos-title" "nos-description";
   justify-content: center;
   gap: 10px;
+  padding: 140px;
 }
 
 .nosotrosSection1-container::before {
@@ -814,44 +806,49 @@ footer {
 .nosotrosSection2-container {
   display: flex;
   flex-flow: column wrap;
-  padding: 0;
-  margin-bottom: 20px;
+  flex: 200px;
+}
+
+.video {
+  padding-bottom: 20px;
+}
+
+.video iframe {
+  max-width: 100%;
+  height: 250px;
+}
+
+.mision-title,
+.vision-title {
+  background-color: white;
+  color: inherit;
 }
 
 .nosotrosSection3-container {
-  display: grid;
-  grid-template-areas: "mision-title" "mision-text" "mision-img";
-  justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 200px;
 }
 
-.mision-title {
-  grid-area: mision-title;
+.mision-img img {
+  max-width: 100%;
 }
 
-.paragraph1 {
-  grid-area: mision-text;
-}
-
-.mision-img {
-  grid-area: mision-img;
+.paragraph1,
+.paragraph2 {
+  margin: 0;
+  font-size: inherit;
+  padding: 0 40px;
 }
 
 .nosotrosSection4-container {
-  display: grid;
-  grid-template-areas: "vision-title" "vision-text" "vision-img";
-  justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 200px;
 }
 
-.vision-title {
-  grid-area: vision-title;
-}
-
-.paragraph2 {
-  grid-area: vision-text;
-}
-
-.vision-img {
-  grid-area: vision-img;
+.vision-img img {
+  max-width: 100%;
 }
 /* ------------------------------------------------------- */
 
@@ -863,6 +860,7 @@ footer {
   display: grid;
   grid-template-areas: "solu-h1" "solu-description";
   justify-content: center;
+  padding: 140px;
 }
 
 .soluSection-item1 {
@@ -896,10 +894,22 @@ footer {
 
 .soluSection31-container {
   grid-area: section1;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.section31-img img {
+  max-width: 100%;
 }
 
 .soluSection32-container {
   grid-area: section2;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.section32-img img {
+  max-width: 100%;
 }
 /* --------------------------------------------------------- */
 
@@ -919,6 +929,16 @@ footer {
   grid-area: formulario;
   width: 80vw;
 }
+
+.google-iframe iframe {
+  max-width: 100%;
+  height: 300px;
+}
+
+.contacto-img1,
+.contacto-img2 {
+  display: none;
+}
 /* ------------------------------------------------------- */
 
 /* -------------------- NOVEDADES PAGE -------------------- */
@@ -932,12 +952,120 @@ footer {
 .paragraphs {
   text-align: justify;
 }
+
+.sede-img img {
+  max-width: 100%;
+}
 /* -------------------------------------------------------- */
 
 /* -------------------- FOOTER -------------------- */
+
+footer {
+  flex-flow: column wrap;
+}
+
 .branches {
   display: none;
 }
+
+.footer-arrow {
+  display: none;
+}
+
 /* ------------------------------------------------ */
 }
 /* ------------------------------------------------------- */
+
+/* -------------------- TABLET -------------------- */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+/* -------------------- HEADER -------------------- */
+
+/* --- Nav Bar --- */
+.header-div,
+.header-nav {
+  display: none;
+}
+
+.nav-mobile {
+  display: flex;
+}
+
+.logo-mobile {
+  width: 50%;
+}
+.hamburguesa {
+  justify-self: center;
+}
+/* --------------- */
+
+/* ------------------------------------------------ */
+
+/* -------------------- HOME PAGE -------------------- */
+
+.homeSection5-container {
+  display: grid;
+  grid-template-areas: "text1 text1" "img1 img2";
+  justify-items: center;
+}
+
+.homeSection5-item1 {
+  grid-area: img1;
+}
+
+.homeSection5-item2 {
+  grid-area: text1;
+}
+
+.homeSection5-item3 {
+  grid-area: img2;
+}
+/* --------------------------------------------------- */
+
+/* -------------------- NOSOTROS PAGE -------------------- */
+.nosotrosSection2-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: auto;
+}
+
+.video {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+
+.paragraph-one {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.paragraph-two {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.paragraph1,
+.paragraph2 {
+  font-size: inherit;
+}
+/* ------------------------------------------------------- */
+
+/* -------------------- FOOTER -------------------- */
+.branches-item {
+  padding: 15px 50px;
+}
+
+.copyright {
+  display: none;
+}
+
+.footer-arrow {
+  display: none;
+}
+/* ------------------------------------------------ */
+
+}
+/* ------------------------------------------------ */
