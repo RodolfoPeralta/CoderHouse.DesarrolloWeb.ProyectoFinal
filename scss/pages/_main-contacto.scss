@@ -1,0 +1,63 @@
+/* -------------------- CONTACTO PAGE -------------------- */
+.contact-title {
+    margin: 20px 0px;
+    padding: 0 30px;
+}
+
+.contactoSection-container {
+    @include grid-options(repeat(2, auto), repeat(2, 1fr));
+    margin-bottom: 30px;
+}
+
+.contactoSection1-container {
+    display: grid;
+    grid-template-areas: "info info" "google-iframe google-iframe" "img1 img2";
+    align-content: center;
+    justify-items: center;
+    margin: 20px 40px;
+    padding: 30px;
+}
+
+.contacto-paragraph {
+    text-align: justify;
+    margin-bottom: 20px;
+    grid-area: info;
+  }
+  
+  .google-iframe {
+    grid-area: google-iframe;
+    background-color: #695fb8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .contacto-img1 {
+    grid-area: img1;
+    justify-self: end;
+    margin-right: 2px;
+    align-self: baseline;
+
+    img {
+        width: 3vw;
+    }
+  }
+
+  .contacto-img2 {
+    grid-area: img2;
+    justify-self: start;
+    margin-left: 2px;
+
+    img {
+        width: 5vw;
+    }
+  }
+
+  .contactoSection2-container {
+    @include grid-options(repeat(8, auto), repeat(1, auto));
+    align-content: center;
+    margin: 20px 40px;
+    border-radius: 10px;
+    padding: 30px;
+  }
+/* ------------------------------------------------------- */

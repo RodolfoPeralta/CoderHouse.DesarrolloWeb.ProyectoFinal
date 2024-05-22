@@ -1,0 +1,429 @@
+/* ----------------------- MEDIA QUERIES ---------------------- */
+/*  
+    MOBILE : Entre 320px y 768px
+    TABLET: Entre 769px y 1024px
+    DESKTOP: 1025px y 1200px
+*/
+
+/* -------------------- TABLET -------------------- */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* -------------------- HEADER -------------------- */
+
+    /* --- Nav Bar --- */
+    .header-div,
+    .header-nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .logo-mobile {
+        width: 50%;
+    }
+
+    .hamburguesa {
+        justify-self: center;
+    }
+
+    /* --------------- */
+    /* ------------------------------------------------ */
+
+    /* -------------------- HOME PAGE -------------------- */
+
+    .homeSection5-container {
+        display: grid;
+        grid-template-areas: "text1 text1" "img1 img2";
+        justify-items: center;
+    }
+
+    .homeSection5-item1 {
+        grid-area: img1;
+    }
+
+    .homeSection5-item2 {
+        grid-area: text1;
+    }
+
+    .homeSection5-item3 {
+        grid-area: img2;
+    }
+
+    /* --------------------------------------------------- */
+
+    /* -------------------- NOSOTROS PAGE -------------------- */
+
+    .nosotrosSection2-container {
+        @include grid-options(repeat(3, auto), auto);
+    }
+
+    .video {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+
+    .paragraph-one {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .paragraph-two {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .paragraph1,
+    .paragraph2 {
+        font-size: inherit;
+    }
+
+    /* ------------------------------------------------------- */
+
+    /* -------------------- CONTACTO PAGE -------------------- */
+    .contactoSection-container {
+        @include flex-options(column, center, center, wrap);
+    }
+
+    .contacto-img1,
+    .contacto-img2 {
+        display: none;
+    }
+    /* ------------------------------------------------------- */
+
+    /* -------------------- FOOTER -------------------- */
+
+    .branches-item {
+        padding: 15px 50px;
+    }
+
+    .footer-arrow {
+        display: none;
+    }
+
+    /* ------------------------------------------------ */
+}
+
+/* ------------------------------------------------ */
+
+/* -------------------- MOBILE -------------------- */
+
+@media screen and (max-width: 768px) {
+
+    /* -------------------- HEADER -------------------- */
+
+    /* --- Nav Bar --- */
+    .header-div,
+    .header-nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .logo-mobile {
+        width: 50%;
+    }
+
+    .hamburguesa {
+        justify-self: center;
+    }
+
+    /* --------------- */
+
+    /* ---------------------------------------------------- */
+
+    /* -------------------- HOME PAGE -------------------- */
+
+    .homeSection1-container {
+        background-image: none;
+        background-color: $main-color;
+        background-size: 100% 100%;
+        display: grid;
+        grid-template-areas: "title-h1" "title-h2" "description";
+        row-gap: 2vh;
+        padding: 75px;
+        justify-items: center;
+        border-bottom: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .homeSection1-item {
+
+        h1 {
+            font-size: 4rem;
+            grid-area: title-h1;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            grid-area: title-h2;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.4rem;
+            grid-area: description;
+        }
+    }
+
+    .home-icons {
+        font-size: 80px;
+    }
+
+    .homeSection4-container {
+        display: grid;
+        grid-template-areas: "item1" "item2" "item3";
+    }
+
+    .homeSection4-item1 {
+        grid-area: item1;
+    }
+
+    .homeSection4-item2 {
+        grid-area: item2;
+    }
+
+    .homeSection4-item3 {
+        grid-area: item3;
+    }
+
+    .homeSection5-container {
+        display: grid;
+        grid-template-areas: "item1";
+        justify-items: center;
+    }
+
+    .homeSection5-item2 {
+        grid-area: item1;
+    }
+
+    .homeSection5-item3 {
+        display: none;
+    }
+
+    /* --------------------------------------------------- */
+
+    /* -------------------- NOSOTROS PAGE -------------------- */
+
+    .nosotrosSection1-container {
+        background-color: $main-color;
+        background-image: none;
+        display: grid;
+        grid-template-areas: "nos-title" "nos-description";
+        justify-content: center;
+        gap: 10px;
+        padding: 90px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .nosotrosSection1-item1 {
+        grid-area: nos-title;
+    }
+
+    .nosotrosSection1-item2 {
+        grid-area: nos-description;
+    }
+
+    .nosotrosSection2-container {
+        @include flex-options(column, inherit, inherit, wrap);
+        flex: 200px;
+    }
+
+    .video {
+        padding-bottom: 20px;
+    }
+
+    .video {
+        iframe {
+            max-width: 100%;
+            height: 250px;
+        }
+    }
+
+    .mision-title,
+    .vision-title {
+        background-color: $color-white;
+        color: inherit;
+    }
+
+    .nosotrosSection3-container {
+        @include flex-options(column, inherit, inherit, wrap);
+        flex: 200px;
+    }
+
+    .mision-img {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .paragraph1,
+    .paragraph2 {
+        margin: 0;
+        font-size: inherit;
+        padding: 0 40px;
+    }
+
+    .nosotrosSection4-container {
+        @include flex-options(column, inherit, inherit, wrap);
+        flex: 200px;
+    }
+
+    .vision-img {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    /* ------------------------------------------------------- */
+
+    /* -------------------- SOLUCIONES PAGE -------------------- */
+
+    .soluSection1-container {
+        background-image: none;
+        background-color: $main-color;
+        display: grid;
+        grid-template-areas: "solu-h1" "solu-description";
+        justify-content: center;
+        padding: 90px;
+    }
+
+    .soluSection-item1 {
+        grid-area: solu-h1;
+    }
+
+    .soluSection-item2 {
+        grid-area: solu-description;
+    }
+
+    .soluSection2-container {
+        display: grid;
+        grid-template-areas: "solu-text";
+        justify-content: center;
+    }
+
+    .soluSection2-item1 {
+        grid-area: solu-text;
+        text-align: center;
+    }
+
+    .soluSection2-item2 {
+        display: none;
+    }
+
+    .soluSection3-container {
+        display: grid;
+        grid-template-areas: "section1" "section2";
+        justify-content: center;
+    }
+
+    .soluSection31-container {
+        grid-area: section1;
+        @include flex-options(column, inherit, inherit, wrap);
+    }
+
+    .section31-img {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .soluSection32-container {
+        grid-area: section2;
+        @include flex-options(column, inherit, inherit, wrap);
+    }
+
+    .section32-img {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    /* --------------------------------------------------------- */
+
+    /* -------------------- CONTACTO PAGE -------------------- */
+
+    .contactoSection-container {
+        display: grid;
+        grid-template-areas: "contacto" "formulario";
+        justify-content: center;
+    }
+
+    .contactoSection1-container {
+        grid-area: contacto;
+    }
+
+    .contactoSection2-container {
+        grid-area: formulario;
+        width: 80vw;
+    }
+
+    .google-iframe {
+
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+
+        iframe {
+            max-width: 100%;
+            height: 250px;
+        }
+    }
+
+    .contacto-img1,
+    .contacto-img2 {
+        display: none;
+    }
+
+    /* ------------------------------------------------------- */
+
+    /* -------------------- NOVEDADES PAGE -------------------- */
+
+    .noticias-container {
+        @include flex-options(column, center, inherit, wrap);
+    }
+
+    .paragraphs {
+        text-align: justify;
+    }
+
+    .sede-img {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    #carouselExample {
+        display: block;
+        width: 70vw;
+    }
+
+    /* -------------------------------------------------------- */
+
+    /* -------------------- FOOTER -------------------- */
+
+    footer {
+        @include flex-options(column, inherit, center, wrap);
+    }
+
+    .branches,
+    .footer-arrow {
+        display: none;
+    }
+
+    /* ------------------------------------------------ */
+}
+
+/* ------------------------------------------------------------ */

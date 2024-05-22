@@ -1,0 +1,12 @@
+{
+  "name": "preentrega2-peraltarodolfo",
+  "version": "1.0.0",
+  "description": "Proyecto de diseño de página web para curso de Coderhouse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

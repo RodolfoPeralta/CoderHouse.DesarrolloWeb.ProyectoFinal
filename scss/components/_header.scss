@@ -1,0 +1,51 @@
+/* ------ LOGO ------ */
+
+.header-div {
+    text-align: center;
+    padding: 10px;
+
+    img {
+        width: 50vh;
+    }
+}
+
+/* ------------------ */
+
+/* ------ NAV BAR ------ */
+
+.nav-mobile {
+    display: none;
+}
+
+.header-nav {
+    background-color: #453b95;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.nav-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.nav-item-mine {
+    padding: 0 1em;
+    border: 2px solid transparent; 
+}
+
+.nav-item-mine a:link,
+.nav-item-mine a:visited,
+.nav-item-mine a:focus {
+  font-weight: 500;
+  padding: 0 1em;
+  border: 2px solid transparent;
+}
+
+.nav-item-mine a:hover {
+  color: $color-gray-2;
+  font-weight: 500;
+  border: 2px solid transparent;
+}
+
+/* --------------------- */

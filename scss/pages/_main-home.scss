@@ -1,0 +1,106 @@
+/* -------------------- HOME PAGE -------------------- */
+.homeSection1-container {
+    background-image: url(../assets/img/planta.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    padding: 150px;
+    border-bottom: $main-color solid 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+    @include flex-options(column, space-between, start, wrap);
+
+    &::before {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: rgba(0,0,0,0.33);
+    }
+  }
+
+.homeSection1-item {
+    h1 {
+        font-size: 100px;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 30px;
+        position: relative;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        position: relative;
+    }
+}
+
+.home-section2 {
+    @include pad-margin-b(30px, 60px);
+}
+
+.homeSection2-container {
+    @include flex-options(inherit, inherit, space-around, inherit);
+    justify-content: space-around;
+}
+
+.fig-caption {
+    text-align: center;
+}
+
+.home-section3 {
+    @include pad-margin-b(10px, 60px);
+
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.homeSection4-container {
+    @include pad-margin-b(60px 0px, 20px);
+    @include flex-options(row, center, inherit, wrap);
+}
+
+.homeSection4-item {
+    padding: 2px;
+    margin: 5px 100px;
+}
+
+.home-icons {
+    font-size: 90px;
+    color: $color-white;
+}
+
+.homeSection4-span {
+    font-size: 50px;
+}
+
+.especialidades-title {
+    padding: 5px 30px;
+}
+
+.homeSection5-container {
+    @include flex-options(row, center, center, nowrap);
+    margin-bottom: 20px;
+}
+
+.homeSection5-item {
+    padding: 20px 30px;
+
+    > p {
+        text-align: justify;
+    }
+}
+
+.homeSection5-item1 {
+    
+    img {
+        width: 300px;
+    }
+    
+}
+
+/* --------------------------------------------------- */
