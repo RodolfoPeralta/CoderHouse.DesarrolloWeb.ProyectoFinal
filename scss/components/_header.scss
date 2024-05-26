@@ -1,51 +1,51 @@
-/* ------ LOGO ------ */
+#header {
 
-.header-div {
-    text-align: center;
-    padding: 10px;
+    .header-div {
+        text-align: center;
+        padding: 10px;
 
-    img {
-        width: 50vh;
+        img {
+            width: 50vh;
+        }
     }
+
+    .header-nav {
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+
+        .nav-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            .nav-item-mine {
+                padding: 0 1em;
+                border: 2px solid transparent;
+
+                & a {
+                    color: $color-white;
+                }
+
+                & a:link,
+                & a:visited,
+                & a:focus {
+                    font-weight: 500;
+                    padding: 0 1em;
+                    border: 2px solid transparent;
+                }
+
+                & a:hover {
+                    color: $color-gray-2;
+                    font-weight: 500;
+                    border: 2px solid transparent;
+                }
+            }
+        }
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    background-image: linear-gradient(to bottom, $main-color, #5a5391);
 }
-
-/* ------------------ */
-
-/* ------ NAV BAR ------ */
-
-.nav-mobile {
-    display: none;
-}
-
-.header-nav {
-    background-color: #453b95;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-}
-
-.nav-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.nav-item-mine {
-    padding: 0 1em;
-    border: 2px solid transparent; 
-}
-
-.nav-item-mine a:link,
-.nav-item-mine a:visited,
-.nav-item-mine a:focus {
-  font-weight: 500;
-  padding: 0 1em;
-  border: 2px solid transparent;
-}
-
-.nav-item-mine a:hover {
-  color: $color-gray-2;
-  font-weight: 500;
-  border: 2px solid transparent;
-}
-
-/* --------------------- */

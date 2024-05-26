@@ -1,0 +1,118 @@
+/* -------------------- SOLUCIONES PAGE -------------------- */
+
+.soluSection1-container {
+    background-image: url(../assets/img/yacimiento.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    padding: 150px;
+    @include flex-options(column, inherit, center, wrap);
+    border-bottom: $main-color solid 30px;
+    @extend .font-white;
+
+    .soluSection1-item {
+        h1 {
+            font-size: 80px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+}
+
+.section2-title {
+    margin-top: 10px;
+    @include pad-margin-b(5px 30px, 10px);
+    background-color: $main-color;
+    @extend .font-white;
+}
+
+.soluSection2-container {
+    display: grid;
+    grid-template-areas: "text img";
+    align-items: center;
+    justify-items: center;
+    border-bottom: $main-color solid 20px;
+
+    .soluSection2-item1 {
+        padding-left: 30px;
+        grid-area: text;
+    }
+
+    .soluSection2-item2 {
+        padding: 30px;
+        grid-area: img;
+
+        &>img {
+            width: 350px;
+        }
+    }
+}
+
+.soluSection3-container {
+    @include grid-options(repeat(2, auto), auto);
+    justify-content: center;
+
+    .soluSection31-container {
+        @include grid-options(repeat(4, auto), auto);
+        padding: 30px;
+        margin: 20px 0;
+        justify-items: center;
+        background-color: $color-gray-2;
+
+        .section31-title {
+            grid-row: 1 /2;
+            justify-self: center;
+        }
+
+        .section31-paragraph1 {
+            grid-row: 2 /3;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .section31-paragraph2 {
+            grid-row: 3 / 4;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .section31-img {
+            grid-row: 4 / 5;
+        }
+    }
+
+    .soluSection32-container {
+        @include grid-options(repeat(4, auto), auto);
+        padding: 30px;
+        justify-items: center;
+        margin: 20px 0;
+        background-color: $color-gray-2;
+
+        .section32-title {
+            grid-row: 1 /2;
+        }
+
+
+        .section32-paragraph1 {
+            grid-row: 2 /3;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .section32-paragraph2 {
+            grid-row: 3 / 4;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .section32-img {
+            grid-row: 4 / 5;
+        }
+    }
+}
+
+/* --------------------------------------------------------- */

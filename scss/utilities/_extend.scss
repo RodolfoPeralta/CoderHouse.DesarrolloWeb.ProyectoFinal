@@ -1,0 +1,24 @@
+.font-white {
+    color: $color-white;
+}
+
+.paragraph-novedades {
+    background-color: $color-gray-3;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    @extend .font-white;
+}
+
+.section-span {
+    font-weight: bold;
+}
+
+.sectionSpan-light {
+    font-weight: lighter;
+    font-size: small;
+}
+
+.gray-font {
+    color: $color-gray;
+}

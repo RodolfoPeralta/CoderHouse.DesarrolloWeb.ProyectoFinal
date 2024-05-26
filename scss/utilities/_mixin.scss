@@ -17,3 +17,9 @@
     margin-bottom: $margin-b;
 }
 
+@mixin font-options ($f-weight, $f-style, $f-size) {
+    font-weight: $f-weight;
+    font-style: $f-style;
+    font-size: $f-size;
+}
+

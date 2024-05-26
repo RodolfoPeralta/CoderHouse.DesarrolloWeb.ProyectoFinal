@@ -2,52 +2,61 @@ footer {
     @include flex-options(column, space-around, center, wrap);
     position: relative;
     justify-items: center;
-}
+    background-color: $main-color;
+    @extend .font-white;
 
-.branches {
-    @include flex-options(row, center, inherit, wrap);
-}
+    .copyright {
+        @extend .sectionSpan-light;
+    }
 
-.branches-item {
-    padding: 15px 200px;
-    text-align: center;
-    max-width: 100%;
+    .branches {
+        @include flex-options(row, center, inherit, wrap);
 
-    p {
-        margin-bottom: 0;
+        .branches-item {
+            padding: 15px 200px;
+            text-align: center;
+            max-width: 100%;
+
+            &::first-line {
+                @extend .section-span;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .icons-container {
+        @include flex-options(row, inherit, inherit, wrap);
+        margin: 10px;
+
+        .icons-item {
+            padding: 5px 10px;
+            border: 2px solid transparent;
+
+            .footer-icons {
+                font-size: 20px;
+                color: $color-white;
+                border: 2px solid transparent;
+
+                &:hover {
+                    color: $color-gray-2;
+                    border: 2px solid transparent;
+                }
+            }
+
+            .arrow-icon {
+                font-size: 35px;
+                position: absolute;
+                right: 50px;
+                bottom: 90px;
+                border: 2px solid transparent;
+
+                &:hover {
+                    border: 2px solid transparent;
+                }
+            }
+        }
     }
 }
-
-.icons-container {
-    @include flex-options(row, inherit, inherit, wrap);
-    margin: 10px;
-}
-
-.icons-item {
-    padding: 5px 10px;
-    border: 2px solid transparent;
-}
-
-.footer-icons {
-    font-size: 20px;
-    color: $color-white;
-    border: 2px solid transparent;
-
-    &:hover {
-        color: $color-gray-2;
-        border: 2px solid transparent;
-    }
-}
-
-.arrow-icon {
-    font-size: 35px;
-    position: absolute;
-    right: 50px;
-    bottom: 90px;
-    border: 2px solid transparent;
-
-    &:hover {
-        border: 2px solid transparent;
-    }
-}
-
