@@ -1,3 +1,5 @@
+/* -------------------- FOOTER -------------------- */
+
 footer {
     @include flex-options(column, space-around, center, wrap);
     position: relative;
@@ -60,3 +62,5 @@ footer {
         }
     }
 }
+
+/* ------------------------------------------------ */

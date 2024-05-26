@@ -41,7 +41,7 @@
 
 .home-section2 {
 
-    > h3 {
+    >h3 {
         @extend .font-white;
     }
 
@@ -95,7 +95,7 @@
     .homeSection4-item {
         padding: 2px;
         margin: 5px 100px;
-    
+
         span {
             font-size: 50px;
             @extend .section-span;
@@ -128,5 +128,6 @@
 
     }
 }
+
 
 /* --------------------------------------------------- */
