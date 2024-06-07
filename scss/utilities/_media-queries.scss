@@ -5,6 +5,52 @@
     DESKTOP: 1025px y 1200px
 */
 
+
+/* -------------------- DESKTOP -------------------- */
+
+@media screen and (min-width: 1025px) and (max-width: 1117px) {
+
+    /* -------------------- HOME PAGE -------------------- */
+    .homeSection4-container {
+        .homeSection4-item {
+            padding: 0;
+            margin: 5px 4rem;
+
+            justify-items: center;
+        }
+    }
+
+    /* --------------------------------------------------- */
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1229px) {
+
+    /* -------------------- FOOTER -------------------- */
+    footer {
+        .branches {
+            .branches-item {
+                padding: 15px 9rem;
+            }
+        }
+
+        .footer-arrow {
+            display: none;
+        }
+    }
+
+    /* ------------------------------------------------ */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1001px) {
+    
+    .nosotrosSection1-container {
+        background-size: cover;
+    }
+}
+
+/* ------------------------------------------------- */
+
 /* -------------------- TABLET -------------------- */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -31,6 +77,34 @@
 
     /* -------------------- HOME PAGE -------------------- */
 
+    .homeSection1-container {
+        background-size: cover;
+        display: grid;
+        grid-template-areas: "title-h1" "title-h2" "description";
+        row-gap: 2vh;
+        padding: 75px;
+        justify-items: center;
+
+        .homeSection1-item {
+
+            h1 {
+                font-size: 4rem;
+                grid-area: title-h1;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                grid-area: title-h2;
+            }
+
+            p {
+                text-align: center;
+                font-size: 1.4rem;
+                grid-area: description;
+            }
+        }
+    }
+
     .home-section2 {
         .homeSection2-container {
             li {
@@ -40,6 +114,15 @@
                     }
                 }
             }
+        }
+    }
+
+    .homeSection4-container {
+        .homeSection4-item {
+            padding: 0;
+            margin: 5px 40px;
+
+            justify-items: center;
         }
     }
 
@@ -64,6 +147,25 @@
     /* --------------------------------------------------- */
 
     /* -------------------- NOSOTROS PAGE -------------------- */
+
+    .nosotrosSection1-container {
+        background-size: cover;
+        display: grid;
+        grid-template-areas: "item1" "item2";
+        row-gap: 2vh;
+        padding: 75px;
+        justify-items: center;
+
+        .nosotrosSection1-item1 {
+            grid-area: item1;
+            text-align: center;
+        }
+
+        .nosotrosSection1-item2 {
+            grid-area: item2;
+            text-align: center;
+        }
+    }
 
     .nosotrosSection2-container {
         @include grid-options(repeat(3, auto), auto);
@@ -91,9 +193,69 @@
         font-size: inherit;
     }
 
+    .nosotrosSection3-container {
+        @include flex-options(column, inherit, center, wrap);
+        flex: 200px;
 
+        .mision-img {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .mision-title {
+            background-color: $color-white;
+            color: inherit;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paragraph1 {
+            margin: 0;
+            font-size: inherit;
+            padding: 0 30px;
+        }
+    }
+
+    .nosotrosSection4-container {
+        @include flex-options(column, inherit, center, wrap);
+        flex: 200px;
+
+        .vision-img {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .vision-title {
+            background-color: $color-white;
+            color: inherit;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paragraph2 {
+            margin: 0;
+            font-size: inherit;
+            padding: 0 30px;
+        }
+    }
 
     /* ------------------------------------------------------- */
+
+    /* -------------------- SOLUCIONES PAGE -------------------- */
+    .soluSection1-container {
+
+        .soluSection-item1 {
+            text-align: center;
+        }
+
+        .soluSection-item2 {
+            text-align: center;
+        }
+    }
+    /* --------------------------------------------------------- */
+
 
     /* -------------------- NOVEDADES PAGE ------------------- */
 
@@ -270,6 +432,7 @@
 
         .nosotrosSection1-item1 {
             grid-area: nos-title;
+            text-align: center;
         }
 
         .nosotrosSection1-item2 {
@@ -301,7 +464,7 @@
 
 
     .nosotrosSection3-container {
-        @include flex-options(column, inherit, inherit, wrap);
+        @include flex-options(column, inherit, center, wrap);
         flex: 200px;
 
         .mision-img {
@@ -327,7 +490,7 @@
     }
 
     .nosotrosSection4-container {
-        @include flex-options(column, inherit, inherit, wrap);
+        @include flex-options(column, inherit, center, wrap);
         flex: 200px;
 
         .vision-title {
@@ -364,10 +527,12 @@
 
         .soluSection-item1 {
             grid-area: solu-h1;
+            text-align: center;
         }
 
         .soluSection-item2 {
             grid-area: solu-description;
+            text-align: center;
         }
     }
 

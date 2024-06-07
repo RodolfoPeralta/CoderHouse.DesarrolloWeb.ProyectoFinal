@@ -389,6 +389,7 @@ footer .icons-container .icons-item .arrow-icon:hover {
   font-weight: 500;
   font-size: 20px;
   position: relative;
+  text-align: center;
 }
 
 .enfoque-title {
@@ -553,6 +554,9 @@ footer .icons-container .icons-item .arrow-icon:hover {
   flex-wrap: wrap;
   border-bottom: #302680 solid 30px;
 }
+.soluSection1-container .soluSection1-item {
+  text-align: center;
+}
 .soluSection1-container .soluSection1-item h1 {
   font-size: 80px;
 }
@@ -652,6 +656,32 @@ footer .icons-container .icons-item .arrow-icon:hover {
     TABLET: Entre 769px y 1024px
     DESKTOP: 1025px y 1200px
 */
+/* -------------------- DESKTOP -------------------- */
+@media screen and (min-width: 1025px) and (max-width: 1117px) {
+  /* -------------------- HOME PAGE -------------------- */
+  .homeSection4-container .homeSection4-item {
+    padding: 0;
+    margin: 5px 4rem;
+    justify-items: center;
+  }
+  /* --------------------------------------------------- */
+}
+@media screen and (min-width: 1025px) and (max-width: 1229px) {
+  /* -------------------- FOOTER -------------------- */
+  footer .branches .branches-item {
+    padding: 15px 9rem;
+  }
+  footer .footer-arrow {
+    display: none;
+  }
+  /* ------------------------------------------------ */
+}
+@media screen and (min-width: 769px) and (max-width: 1001px) {
+  .nosotrosSection1-container {
+    background-size: cover;
+  }
+}
+/* ------------------------------------------------- */
 /* -------------------- TABLET -------------------- */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* -------------------- HEADER -------------------- */
@@ -667,8 +697,34 @@ footer .icons-container .icons-item .arrow-icon:hover {
   }
   /* ------------------------------------------------ */
   /* -------------------- HOME PAGE -------------------- */
+  .homeSection1-container {
+    background-size: cover;
+    display: grid;
+    grid-template-areas: "title-h1" "title-h2" "description";
+    row-gap: 2vh;
+    padding: 75px;
+    justify-items: center;
+  }
+  .homeSection1-container .homeSection1-item h1 {
+    font-size: 4rem;
+    grid-area: title-h1;
+  }
+  .homeSection1-container .homeSection1-item h2 {
+    font-size: 1.8rem;
+    grid-area: title-h2;
+  }
+  .homeSection1-container .homeSection1-item p {
+    text-align: center;
+    font-size: 1.4rem;
+    grid-area: description;
+  }
   .home-section2 .homeSection2-container li figure:hover {
     transform: none;
+  }
+  .homeSection4-container .homeSection4-item {
+    padding: 0;
+    margin: 5px 40px;
+    justify-items: center;
   }
   .homeSection5-container {
     display: grid;
@@ -686,6 +742,22 @@ footer .icons-container .icons-item .arrow-icon:hover {
   }
   /* --------------------------------------------------- */
   /* -------------------- NOSOTROS PAGE -------------------- */
+  .nosotrosSection1-container {
+    background-size: cover;
+    display: grid;
+    grid-template-areas: "item1" "item2";
+    row-gap: 2vh;
+    padding: 75px;
+    justify-items: center;
+  }
+  .nosotrosSection1-container .nosotrosSection1-item1 {
+    grid-area: item1;
+    text-align: center;
+  }
+  .nosotrosSection1-container .nosotrosSection1-item2 {
+    grid-area: item2;
+    text-align: center;
+  }
   .nosotrosSection2-container {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -709,7 +781,59 @@ footer .icons-container .icons-item .arrow-icon:hover {
   .paragraph2 {
     font-size: inherit;
   }
+  .nosotrosSection3-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 200px;
+  }
+  .nosotrosSection3-container .mision-img img {
+    max-width: 100%;
+  }
+  .nosotrosSection3-container .mision-title {
+    background-color: white;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+  }
+  .nosotrosSection3-container .paragraph1 {
+    margin: 0;
+    font-size: inherit;
+    padding: 0 30px;
+  }
+  .nosotrosSection4-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 200px;
+  }
+  .nosotrosSection4-container .vision-img img {
+    max-width: 100%;
+  }
+  .nosotrosSection4-container .vision-title {
+    background-color: white;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+  }
+  .nosotrosSection4-container .paragraph2 {
+    margin: 0;
+    font-size: inherit;
+    padding: 0 30px;
+  }
   /* ------------------------------------------------------- */
+  /* -------------------- SOLUCIONES PAGE -------------------- */
+  .soluSection1-container .soluSection-item1 {
+    text-align: center;
+  }
+  .soluSection1-container .soluSection-item2 {
+    text-align: center;
+  }
+  /* --------------------------------------------------------- */
   /* -------------------- NOVEDADES PAGE ------------------- */
   .event1,
   .event2 {
@@ -834,6 +958,7 @@ footer .icons-container .icons-item .arrow-icon:hover {
   }
   .nosotrosSection1-container .nosotrosSection1-item1 {
     grid-area: nos-title;
+    text-align: center;
   }
   .nosotrosSection1-container .nosotrosSection1-item2 {
     grid-area: nos-description;
@@ -862,7 +987,7 @@ footer .icons-container .icons-item .arrow-icon:hover {
     display: flex;
     flex-direction: column;
     justify-content: inherit;
-    align-items: inherit;
+    align-items: center;
     flex-wrap: wrap;
     flex: 200px;
   }
@@ -884,7 +1009,7 @@ footer .icons-container .icons-item .arrow-icon:hover {
     display: flex;
     flex-direction: column;
     justify-content: inherit;
-    align-items: inherit;
+    align-items: center;
     flex-wrap: wrap;
     flex: 200px;
   }
@@ -914,9 +1039,11 @@ footer .icons-container .icons-item .arrow-icon:hover {
   }
   .soluSection1-container .soluSection-item1 {
     grid-area: solu-h1;
+    text-align: center;
   }
   .soluSection1-container .soluSection-item2 {
     grid-area: solu-description;
+    text-align: center;
   }
   .soluSection2-container {
     display: grid;
