@@ -657,7 +657,7 @@ footer .icons-container .icons-item .arrow-icon:hover {
     DESKTOP: 1025px y 1200px
 */
 /* -------------------- DESKTOP -------------------- */
-@media screen and (min-width: 1025px) and (max-width: 1117px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
   /* -------------------- HOME PAGE -------------------- */
   .homeSection4-container .homeSection4-item {
     padding: 0;
@@ -666,13 +666,10 @@ footer .icons-container .icons-item .arrow-icon:hover {
   }
   /* --------------------------------------------------- */
 }
-@media screen and (min-width: 1025px) and (max-width: 1229px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   /* -------------------- FOOTER -------------------- */
   footer .branches .branches-item {
     padding: 15px 9rem;
-  }
-  footer .footer-arrow {
-    display: none;
   }
   /* ------------------------------------------------ */
 }
