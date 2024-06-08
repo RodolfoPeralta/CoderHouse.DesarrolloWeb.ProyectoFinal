@@ -248,7 +248,7 @@ footer .icons-container .icons-item .arrow-icon:hover {
 /* ------------------------------------------------------- */
 /* -------------------- HOME PAGE -------------------- */
 .homeSection1-container {
-  background-image: url(../assets/img/planta.jpg);
+  background-image: url(../assets/img/planta.webp);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100% 100%;
@@ -361,7 +361,7 @@ footer .icons-container .icons-item .arrow-icon:hover {
 /* --------------------------------------------------- */
 /* -------------------- NOSOTROS PAGE -------------------- */
 .nosotrosSection1-container {
-  background-image: url(../assets/img/industrias.jpg);
+  background-image: url(../assets/img/industrias.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -542,7 +542,7 @@ footer .icons-container .icons-item .arrow-icon:hover {
 /* -------------------------------------------------------- */
 /* -------------------- SOLUCIONES PAGE -------------------- */
 .soluSection1-container {
-  background-image: url(../assets/img/yacimiento.png);
+  background-image: url(../assets/img/yacimiento.webp);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100% 100%;
@@ -892,6 +892,9 @@ footer .icons-container .icons-item .arrow-icon:hover {
   .homeSection1-container::before {
     display: none;
   }
+  .homeSection1-container .homeSection1-item {
+    text-align: center;
+  }
   .homeSection1-container .homeSection1-item h1 {
     font-size: 4rem;
     grid-area: title-h1;
@@ -932,6 +935,9 @@ footer .icons-container .icons-item .arrow-icon:hover {
     display: grid;
     grid-template-areas: "item1";
     justify-items: center;
+  }
+  .homeSection5-container .homeSection5-item1 img {
+    width: 100%;
   }
   .homeSection5-container .homeSection5-item2 {
     grid-area: item1;

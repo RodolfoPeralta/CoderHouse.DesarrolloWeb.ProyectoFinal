@@ -34,11 +34,12 @@
             }
         }
     }
+
     /* ------------------------------------------------ */
 }
 
 @media screen and (min-width: 769px) and (max-width: 1001px) {
-    
+
     .nosotrosSection1-container {
         background-size: cover;
     }
@@ -249,6 +250,7 @@
             text-align: center;
         }
     }
+
     /* --------------------------------------------------------- */
 
 
@@ -338,6 +340,8 @@
 
         .homeSection1-item {
 
+            text-align: center;
+
             h1 {
                 font-size: 4rem;
                 grid-area: title-h1;
@@ -398,6 +402,12 @@
         display: grid;
         grid-template-areas: "item1";
         justify-items: center;
+
+        .homeSection5-item1 {
+            img {
+                width: 100%;
+            }
+        }
 
         .homeSection5-item2 {
             grid-area: item1;
